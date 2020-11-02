@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> CORS Demo</h1>
+    <button id="b1"> Fetch Joke</button>
+    <div id="setup">Setup</div>
+    <div id="punchline">punchline</div>
+
+    <script>
+        const b1 = document.getElementById("b1");
+        const setup = document.getElementById("setup");
+        const punchline = document.getElementById("punchline");
+
+        b1.addEventListener("click", function() {
+            const proxy = "http://127.0.0.1:8080/";
+            const url = "https://joke-api-strict-cors.appspot.com/random_joke";
+            fetch(proxy + url).then(res => res.json())
+            .then( json => {
+                setup.innerText = json.setup;
+                punchline.innerText = json.punchline;
+            })
+
+        
+        });
+    </script>
+</body>
+</html>

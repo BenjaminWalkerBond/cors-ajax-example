@@ -1,0 +1,23 @@
+{
+  "name": "cors-ajax-example",
+  "version": "1.0.0",
+  "description": "An example CORS request",
+  "main": "index.js",
+  "scripts": {
+    "proxy": "node proxy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenjaminWalkerBond/cors-ajax-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenjaminWalkerBond/cors-ajax-example/issues"
+  },
+  "homepage": "https://github.com/BenjaminWalkerBond/cors-ajax-example#readme",
+  "dependencies": {
+    "cors-anywhere": "^0.4.3"
+  }
+}
